@@ -5,5 +5,12 @@ try:
     age = int(age)  # i'm trying to convert it to a number
     print("you were probably born in", 2024 - int(age))
 
-except:
+except ValueError:
     print("you are trying to trick me")
+    print('better luck next time')
+
+except ZeroDivisionError:
+    print('you cant divide by 0')
+
+except:
+    print('something unexpected happened')
