@@ -14,3 +14,8 @@ except ZeroDivisionError:
 
 except:
     print('something unexpected happened')
+else: # this happens if no error ocurred
+    print("you were probably born in", 2024 - age)
+
+finally:
+    print("thanks for playing")
